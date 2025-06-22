@@ -7,6 +7,7 @@ import { Metadata } from "next";
 import WorkShowcase from "@/components/home/WorkShowcase";
 import { getFeaturedProjects } from "@/data/projects";
 import HeroSectionOne from "@/components/hero-section-demo-1";
+import PackagesSection from "@/components/home/FeaturedServices";
 
 export const metadata: Metadata = {
   title: "Nexus | Intelligent AI Solutions for Modern Business",
@@ -18,7 +19,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
       <HeroSectionOne />
-      <FeaturedServices />
+      <PackagesSection />
       <WorkShowcase featuredProjects={featuredProjects} />
       <WhyChooseUs />
       <Testimonials />

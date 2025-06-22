@@ -134,7 +134,7 @@ export default function AboutPage() {
                   <div className={`h-16 w-16 rounded-lg ${value.color} flex items-center justify-center mb-6`}>
                     {value.icon}
                   </div>
-                  <h3 className="text-2xl font-bold mb-3">{value.title}</h3>
+                  <h3 className="text- text-white font-bold mb-3">{value.title}</h3>
                   <p className="text-gray-400 text-lg">{value.description}</p>
                 </CardContent>
               </Card>

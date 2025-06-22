@@ -33,15 +33,7 @@ const Navbar: React.FC = () => {
   const navLinks: NavLink[] = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
-    { href: "/services", label: "Services", hasDropdown: true,
-      dropdownItems: [
-        { href: "/services/web-development", label: "App & Web Development" },
-        { href: "/services/seo-social", label: "SEO & Social Media" },
-        { href: "/services/automation", label: "CRM & Workflow Automation" },
-        { href: "/services/ai-chatbots", label: "AI Chatbots" },
-        { href: "/services/data-analysis", label: "Data Analysis & Insights" },
-        { href: "/services/lead-generation", label: "Lead Generation" },
-      ],}
+    { href: "/packages", label: "Packages", }
     , { href: "/work", label: "Work", },
 
     { href: "/contact", label: "Contact" },
@@ -65,17 +57,14 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
       <div className="flex h-20 items-center justify-between w-full">
   {/* Logo */}
-  <div className="flex items-center">
-    <Link href="/" className="flex items-center mb-4">
-      <img src="/13.png" alt="Rayvyn AI Logo" className="h-12 w-auto mr-2" />
-      <span className="text-2xl font-bold bg-clip-text  bg-gradient-to-r text-white">
-                Rayvyn AI
-              </span>
-    </Link>
-
-
-
-          </div>
+<div className="flex items-center">
+  <Link href="/" className="flex items-center mb-4">
+    <img src="/13.png" alt="Rayvyn AI Logo" className="h-12 w-auto mr-2" />
+    <span className="text-3xl font-extrabold tracking-tight bg-gradient-to-r from-[#00C9FF] to-[#92FE9D] bg-clip-text text-transparent font-sans">
+      Rayvyn<span className="ml-1 font-light">AI</span>
+    </span>
+  </Link>
+</div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-2">

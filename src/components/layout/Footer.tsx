@@ -37,15 +37,31 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <h3 className="text-lg font-semibold mb-4">Automation Packages</h3>
+<p className="text-sm text-gray-400 mb-3">End-to-end AI automation bundles to launch, grow, and scale your business.</p>
+
             <ul className="space-y-2">
-              <li><Link href="/services/web-development" className="hover:text-white">App & Web Development</Link></li>
-              <li><Link href="/services/seo-social" className="hover:text-white">SEO & Social Media</Link></li>
-              <li><Link href="/services/automation" className="hover:text-white">CRM & Workflow Automation</Link></li>
-              <li><Link href="/services/ai-chatbots" className="hover:text-white">AI Chatbots</Link></li>
-              <li><Link href="/services/data-analysis" className="hover:text-white">Data Analysis</Link></li>
-              <li><Link href="/services/lead-generation" className="hover:text-white">Lead Generation</Link></li>
-            </ul>
+    <li>
+      <Link href="/packages" className="hover:text-white">
+        Smart Start (₹20K)
+      </Link>
+    </li>
+    <li>
+      <Link href="/packages" className="hover:text-white">
+        Lead Magnet Pro (₹35K)
+      </Link>
+    </li>
+    <li>
+      <Link href="/packages" className="hover:text-white">
+        Automation Engine (₹55K)
+      </Link>
+    </li>
+    <li>
+      <Link href="/packages" className="hover:text-white">
+        Custom AI Suite (₹80K+)
+      </Link>
+    </li>
+  </ul>
           </div>
           
           <div>

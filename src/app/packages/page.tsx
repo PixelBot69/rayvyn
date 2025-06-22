@@ -110,85 +110,68 @@ const TechBadge = ({ name, index }: { name: string; index: number }) => {
 
 const ServicesPage = () => {
   const services = [
-    {
-      id: "web-development",
-      title: "App & Web Development",
-      description: "Custom web and mobile solutions tailored to your business needs with a focus on performance, security, and modern design.",
-      features: [
-        "Responsive web applications",
-        "Cross-platform mobile apps",
-        "E-commerce solutions",
-        "Progressive Web Apps (PWAs)",
-        "UI/UX design and development"
-      ],
-      icon: "💻"
-    },
-    {
-      id: "seo-social",
-      title: "SEO & Social Media",
-      description: "Comprehensive digital marketing strategies to increase your online visibility, engage with your audience, and drive conversions.",
-      features: [
-        "Search engine optimization",
-        "Social media management",
-        "Content marketing",
-        "PPC advertising",
-        "Analytics and reporting"
-      ],
-      icon: "📱"
-    },
-    {
-      id: "automation",
-      title: "CRM & Workflow Automation",
-      description: "Streamline your business processes with custom automation solutions that save time, reduce errors, and improve efficiency.",
-      features: [
-        "Business process automation",
-        "CRM integration and customization",
-        "Document automation",
-        "Task and workflow management",
-        "Automated reporting and analytics"
-      ],
-      icon: "⚙️"
-    },
-    {
-      id: "ai-chatbots",
-      title: "AI Chatbots",
-      description: "Intelligent conversational agents that enhance customer experience, provide 24/7 support, and streamline interactions.",
-      features: [
-        "Custom AI chatbot development",
-        "Natural language processing",
-        "Multi-channel integration",
-        "Analytics and continuous improvement",
-        "Seamless handoff to human agents"
-      ],
-      icon: "🤖"
-    },
-    {
-      id: "data-analysis",
-      title: "Data Analysis & Insights",
-      description: "Transform your raw data into actionable insights that drive informed decision-making and strategic planning.",
-      features: [
-        "Data collection and cleansing",
-        "Advanced analytics and visualization",
-        "Predictive modeling",
-        "Business intelligence dashboards",
-        "Custom reporting solutions"
-      ],
-      icon: "📊"
-    },
-    {
-      id: "lead-generation",
-      title: "Lead Generation",
-      description: "Targeted strategies to attract high-quality leads, nurture relationships, and convert prospects into loyal customers.",
-      features: [
-        "Lead capture and qualification",
-        "Email marketing campaigns",
-        "Landing page optimization",
-        "Lead nurturing workflows",
-        "Conversion rate optimization"
-      ],
-      icon: "🎯"
-    }
-  ];
+  {
+    id: "smart-start",
+    title: "Smart Start",
+    price: "₹20,000 (One-Time)",
+    description: "Perfect for startups and individuals who want a fast, AI-powered web presence with essential automation.",
+    features: [
+      "AI-Powered Landing Page (Framer/Webflow)",
+      "Mobile-Responsive Web App (PWA)",
+      "Basic GPT Chatbot (FAQs)",
+      "Lead Form with Email Notification",
+      "1 Automation (e.g., auto-email follow-up)"
+    ],
+    icon: "🚀"
+  },
+  {
+    id: "lead-magnet-pro",
+    title: "Lead Magnet Pro",
+    price: "₹35,000 (One-Time)",
+    description: "Ideal for service providers who need advanced lead capture and automation setup.",
+    features: [
+      "AI Website (3–5 Pages + Blog/Booking)",
+      "Mobile Web App (PWA) + Form Integrations",
+      "GPT Chatbot with Lead Qualifier",
+      "WhatsApp + Email Automation",
+      "Lead Capture & CRM Setup (Notion or Hubspot)",
+      "LinkedIn/Email Outreach Setup (PhantomBuster + GPT)"
+    ],
+    icon: "🎯"
+  },
+  {
+    id: "automation-engine",
+    title: "Automation Engine",
+    price: "₹55,000 (One-Time)",
+    description: "Designed for businesses looking to scale their outreach and automate deeply.",
+    features: [
+      "All Lead Magnet Pro features",
+      "AI-Powered Blog & Copywriting Setup (GPT)",
+      "Mobile Web App (React Native or PWA)",
+      "Advanced CRM Workflows (auto-tagging, nurturing)",
+      "Smart Funnel Integration (booking, email drip)",
+      "Monthly Leads Dashboard (Google Sheets + GPT)",
+      "2 Channels of Lead Generation (LinkedIn + Email)"
+    ],
+    icon: "⚙️"
+  },
+  {
+    id: "custom-suite",
+    title: "Custom AI Suite",
+    price: "Starts at ₹80,000+",
+    description: "Best for established businesses who want a fully customized AI-first digital setup.",
+    features: [
+      "Custom Web + Mobile App (React/Flutter)",
+      "Tailored GPT Chatbot (multi-intent, bookings, custom data)",
+      "Internal CRM & Dashboard Setup",
+      "Custom AI Lead Outreach Engine",
+      "Business Workflow Automation (Slack, Gmail, Notion, etc.)",
+      "Dedicated Support + Optimization"
+    ],
+    icon: "🧠"
+  }
+];
+
 
   const processes = [
     {
@@ -213,11 +196,18 @@ const ServicesPage = () => {
     }
   ];
 
-  const technologies = [
-    "React", "Next.js", "Python", "TensorFlow", "Node.js", 
-    "AWS", "Google Cloud", "Docker", "Kubernetes", "PostgreSQL", 
-    "MongoDB", "GraphQL", "TypeScript", "Flutter", "Django"
-  ];
+const technologies = [
+  "AI Chatbots (GPT, TensorFlow, Dialogflow)", 
+  "Web & App Development (React, Next.js, Flutter)",
+  "CRM & Workflow Automation (Zapier, Notion, HubSpot)",
+  "Cloud Infrastructure (AWS, Google Cloud, Docker, Kubernetes)",
+  "Backend Automation (Node.js, Python, Django)",
+  "Custom API Integration (GraphQL, REST)",
+  "Database Management (PostgreSQL, MongoDB)",
+  "Data Analytics & Dashboards (Python, Looker, Power BI)",
+  "TypeScript-Based Scalable Apps",
+];
+
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white">
@@ -270,19 +260,62 @@ const ServicesPage = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {services.map((service, index) => (
-              <ServiceCard
-                key={service.id}
-                id={service.id}
-                title={service.title}
-                description={service.description}
-                features={service.features}
-                icon={service.icon}
-                index={index}
-              />
-            ))}
+<div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+  {services.map((service, index) => (
+    <div
+      key={service.id}
+      className="group relative bg-gradient-to-br from-gray-900 to-black text-white rounded-3xl border border-gray-800/50 p-8 flex flex-col justify-between hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-2 overflow-hidden"
+    >
+      {/* Gradient overlay on hover */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-purple-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
+      
+      {/* Glow effect */}
+      <div className="absolute -inset-px bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm -z-10" />
+      
+      <div className="relative z-10">
+        {/* Header with icon space */}
+        <div className="flex items-start justify-between mb-6">
+          <div>
+            <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors duration-300">
+              {service.title}
+            </h3>
+            <p className="text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+              {service.price}
+            </p>
           </div>
+          {/* Optional: Add an icon or badge here */}
+          <div className="w-3 h-3 bg-blue-500 rounded-full opacity-60 group-hover:opacity-100 group-hover:scale-150 transition-all duration-300" />
+        </div>
+        
+        <p className="text-gray-300 mb-6 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
+          {service.description}
+        </p>
+        
+        {/* Features with modern styling */}
+        <div className="space-y-3 mb-8">
+          {service.features.map((feature, i) => (
+            <div key={i} className="flex items-center space-x-3 text-sm text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+              <div className="w-1.5 h-1.5 bg-blue-500 rounded-full flex-shrink-0" />
+              <span>{feature}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      {/* CTA Button */}
+      <a
+        href={`https://wa.me/918840948923?text=Hi! I'm interested in the ${service.title} package.`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="relative z-10 group/btn inline-block text-center bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white font-semibold py-3 px-6 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
+      >
+        <span className="relative z-10">Book Now</span>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-2xl opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300" />
+      </a>
+    </div>
+  ))}
+</div>
+
         </div>
       </section>
 

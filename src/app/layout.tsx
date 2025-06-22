@@ -12,6 +12,12 @@ export const metadata: Metadata = {
     template: "%s | Rayvyn AI",
   },
   description: "Empowering businesses with smart automation and AI solutions. We help companies leverage artificial intelligence to streamline workflows, gain insights, and drive growth.",
+    icons: {
+    icon: "/favicon.ico",            // standard favicon
+    shortcut: "/favicon.ico",        // for older browsers
+    apple: "/apple-touch-icon.png",  // optional apple touch icon
+  },
+
   openGraph: {
     type: "website",
     locale: "en_US",
